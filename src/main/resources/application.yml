@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+security:
+  oauth2:
+    client:
+      registration:
+        google:
+          client-id: your-client-id
+          client-secret: your-client-secret
+          token-exchange-endpoint: https://oauth2.googleapis.com/token
+          oAuth-server-endpoint: https://accounts.google.com/o/oauth2/v2/auth
+          scope: https://www.googleapis.com/auth/youtube
+          redirect-url: http://localhost:8080/code
+
